@@ -185,7 +185,7 @@ header {
   height: 170px;
   }
 
-  footer {background-color: transparent;}
+  footer {background-color: #ebf8ff;}
   .sub-footer {background-color: transparent;}
 
 .small-font {font-size: 0.8rem;}
@@ -369,17 +369,17 @@ header {
       }
 
       .input-text {
-          font-size: 1.2rem;
-          line-height: 1.2;
-          display: block;
-          margin: 0;
-          width: 100%;
-          border: none;
-          border-bottom: 2px solid #5f5a5a;
-          transition: all .5s;
-          padding: .7rem 0 .5rem;
-          background-color: rgba(0,0,0,0);
-          font-family: 'Montserrat', sans-serif;}
+        font-size: 1rem;
+        line-height: 1.2;
+        display: block;
+        margin: 0;
+        width: 100%;
+        border: none;
+        border-bottom: 1.1px solid #5f5a5a;
+        transition: all .5s;
+        padding: .7rem 0 .5rem;
+        background-color: rgba(0,0,0,0);
+        font-family: 'Montserrat', sans-serif;}
 
     .input-label {
       display: block;
@@ -547,4 +547,7 @@ h4 {font-size: 1.3rem;}
 .blog-masonry {
 columns: 1;
 column-gap: 0;}
+
+.small-font {
+    font-size: 0.6rem;
 }
