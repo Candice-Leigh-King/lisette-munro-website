@@ -42,18 +42,8 @@
     <!-- iconify  -->
     <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
 
-    <!-- Magnific Popup for lightbox galleries   -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.css" />
-
-    <!-- slider -->
-    <link rel="stylesheet" href="/slick/slick.css"/>
-    <link rel="stylesheet" href="/slick/slick-theme.css"/>
-
-    <!--  Javascript for the buy button -->
-
-
-<script type="text/javascript">
-/*<![CDATA[*/
+    <script type="text/javascript">
+/<![CDATA[/
 (function () {
   var scriptURL = 'https://sdks.shopifycdn.com/buy-button/latest/buy-button-storefront.min.js';
   if (window.ShopifyBuy) {
@@ -74,38 +64,16 @@
   }
   function ShopifyBuyInit() {
     var client = ShopifyBuy.buildClient({
-      domain: 'shop-mariefeandjakesnow.myshopify.com',
-      storefrontAccessToken: 'd90d61154f90d1257966ef7aac2a1c1e',
+      domain: 'lisettemunroid.myshopify.com',
+      storefrontAccessToken: 'aef76fb4f7ef048d0dde84bc422eda6f',
     });
     ShopifyBuy.UI.onReady(client).then(function (ui) {
       ui.createComponent('product', {
-        id: '4360618344491',
-        node: document.getElementById('product-component-4360618344491'),
+        id: '6644799406230',
+        node: document.getElementById('product-component-1617448408948'),
         moneyFormat: '%24%7B%7Bamount%7D%7D',
         options: {
   "product": {
-    "events": {
-        "addVariantToCart": function (product) {
-            dataLayer.push({
-              'event': 'addToCart',
-              'ecommerce': {
-                'currencyCode': 'USD',
-                'add': {
-                  'products': [{
-                    'name': 'Ultimate Mobile Pack',
-                    'id': product.id,
-                    'price': parseFloat('$19.95'.replace('$', '')),
-                    'quantity': 1
-                  }]
-                }
-              }
-            });
-        },
-        "updateQuantity": function (product) {
-            console.log('Update Quantity')
-            console.log(product)
-        },
-    },
     "styles": {
       "product": {
         "@media (min-width: 601px)": {
@@ -113,30 +81,37 @@
           "margin-left": "20px",
           "margin-bottom": "50px"
         },
-        "text-align": "left"
+        "carousel-button": {
+          "display": "none"
+        }
       },
       "button": {
-        "font-family": "p22-underground, sans-serif",
+        "font-family": "Playfair Display, serif",
+        "color": "#0b0b0b",
         ":hover": {
-          "background-color": "#ab8b78"
+          "color": "#0b0b0b",
+          "background-color": "#d4b4bb"
         },
-        "background-color": "#be9a85",
+        "background-color": "#ebc8d0",
         ":focus": {
-          "background-color": "#ab8b78"
+          "background-color": "#d4b4bb"
         },
-        "border-radius": "1px"
+        "border-radius": "0px",
+        "padding-left": "21px",
+        "padding-right": "21px"
       }
     },
+    "buttonDestination": "modal",
     "contents": {
       "img": false,
-      "title": false,
-      "price": false
+      "imgWithCarousel": true,
+      "options": false
     },
     "text": {
-      "button": "Add to cart"
+      "button": "View product"
     },
     "googleFonts": [
-      "Open Sans"
+      "Playfair Display"
     ]
   },
   "productSet": {
@@ -164,196 +139,146 @@
         }
       },
       "button": {
-        "font-family": "p22-underground, sans-serif",
+        "font-family": "Playfair Display, serif",
+        "color": "#0b0b0b",
         ":hover": {
-          "background-color": "#ab8b78"
+          "color": "#0b0b0b",
+          "background-color": "#d4b4bb"
         },
-        "background-color": "#be9a85",
+        "background-color": "#ebc8d0",
         ":focus": {
-          "background-color": "#ab8b78"
+          "background-color": "#d4b4bb"
         },
-        "border-radius": "1px"
+        "border-radius": "0px",
+        "padding-left": "21px",
+        "padding-right": "21px"
       }
     },
     "googleFonts": [
-      "Open Sans"
-    ]
+      "Playfair Display"
+    ],
+    "text": {
+      "button": "Add to cart"
+    }
   },
+  "option": {},
   "cart": {
-    "events": {
-       "openCheckout": function (cart) {
-           console.log('OpenCheckout')
-           console.log(cart)
-       },
-       'updateItemQuantity': function (cart) {
-           console.log('Updatet Line Item Quantity')
-           console.log(cart)
-       },
-    },
     "styles": {
       "button": {
-        "font-family": "p22-underground, sans-serif",
+        "font-family": "Playfair Display, serif",
+        "color": "#0b0b0b",
         ":hover": {
-          "background-color": "#ab8b78"
+          "color": "#0b0b0b",
+          "background-color": "#d4b4bb"
         },
-        "background-color": "#be9a85",
+        "background-color": "#ebc8d0",
         ":focus": {
-          "background-color": "#ab8b78"
+          "background-color": "#d4b4bb"
         },
-        "border-radius": "1px"
-      },
-      "title": {
-        "color": "#4c4c4c"
-      },
-      "header": {
-        "color": "#4c4c4c"
-      },
-      "lineItems": {
-        "color": "#4c4c4c"
-      },
-      "subtotalText": {
-        "color": "#4c4c4c"
-      },
-      "subtotal": {
-        "color": "#4c4c4c"
-      },
-      "notice": {
-        "color": "#4c4c4c"
-      },
-      "currency": {
-        "color": "#4c4c4c"
-      },
-      "close": {
-        "color": "#4c4c4c",
-        ":hover": {
-          "color": "#4c4c4c"
-        }
-      },
-      "empty": {
-        "color": "#4c4c4c"
-      },
-      "noteDescription": {
-        "color": "#4c4c4c"
-      },
-      "discountText": {
-        "color": "#4c4c4c"
-      },
-      "discountIcon": {
-        "fill": "#4c4c4c"
-      },
-      "discountAmount": {
-        "color": "#4c4c4c"
+        "border-radius": "0px"
       }
     },
     "text": {
-      "notice": "Discount codes are added at checkout."
+      "total": "Subtotal",
+      "button": "Checkout"
     },
-    "popup": false,
     "googleFonts": [
-      "Open Sans"
+      "Playfair Display"
     ]
   },
   "toggle": {
     "styles": {
       "toggle": {
-        "font-family": "p22-underground, sans-serif",
-        "background-color": "#be9a85",
+        "font-family": "Playfair Display, serif",
+        "background-color": "#ebc8d0",
         ":hover": {
-          "background-color": "#ab8b78"
+          "background-color": "#d4b4bb"
         },
         ":focus": {
-          "background-color": "#ab8b78"
+          "background-color": "#d4b4bb"
         }
+      },
+      "count": {
+        "color": "#0b0b0b",
+        ":hover": {
+          "color": "#0b0b0b"
+        }
+      },
+      "iconPath": {
+        "fill": "#0b0b0b"
       }
     },
     "googleFonts": [
-      "Open Sans"
+      "Playfair Display"
     ]
-  },
-  "lineItem": {
-    "styles": {
-      "variantTitle": {
-        "color": "#4c4c4c"
-      },
-      "title": {
-        "color": "#4c4c4c"
-      },
-      "price": {
-        "color": "#4c4c4c"
-      },
-      "fullPrice": {
-        "color": "#4c4c4c"
-      },
-      "discount": {
-        "color": "#4c4c4c"
-      },
-      "discountIcon": {
-        "fill": "#4c4c4c"
-      },
-      "quantity": {
-        "color": "#4c4c4c"
-      },
-      "quantityIncrement": {
-        "color": "#4c4c4c",
-        "border-color": "#4c4c4c"
-      },
-      "quantityDecrement": {
-        "color": "#4c4c4c",
-        "border-color": "#4c4c4c"
-      },
-      "quantityInput": {
-        "color": "#4c4c4c",
-        "border-color": "#4c4c4c"
-      }
-    }
   }
 },
       });
     });
   }
 })();
-/*]]>*/
+/]]>/
 </script>
+
+    <!-- Magnific Popup for lightbox galleries   -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.css" />
+
+    <!-- slider -->
+    <link rel="stylesheet" href="/slick/slick.css"/>
+    <link rel="stylesheet" href="/slick/slick-theme.css"/>
+
 
     <!-- our own custom stylesheet -->
     <link rel="stylesheet" href="/style.css"/>
   </head>
 
-  <header class="grid-center centered sticky">
+  <header class="grid-center_sm-hidden centered sticky">
     <div class="col-3">
       <a href="/">
         <h2 class="logo"> Lisette Munro </h2>
       </a>
     </div>
-    <nav class="col-6 padded-top-nav center">
+    <nav class="col-6_sm-hidden padded-top-nav center">
       <a href="/#bio" class="padded-sides bio"> My bio </a>
       <a href="/music" class="padded-sides music"> my music</a>
       <a href="/merch" class="padded-sides merch"> merch </a>
       <a href="/contact" class="padded-sides connect"> connect </a>
     </nav>
 
+    <div class="col-3_sm-hidden padded-iconify">
+      <a href="#"> <span class="iconify padded-top" data-icon="ph:spotify-logo-light" data-inline="false"></span> </a>
+      <a href="#"> <span class="iconify" data-icon="ph:instagram-logo-light" data-inline="false"></span> </a>
+      <a href="#"> <span class="iconify" data-icon="tabler:brand-tiktok" data-inline="false"></span> </a>
+      <a href="#"> <span class="iconify" data-icon="ph:youtube-logo-light" data-inline="false"></span> </a>
+    </div>
+  </header>
+  <header class="grid desktop-hide">
+
     <div class="col-2-middle padded grid centered fixed desktop-hide">
       <div>
-        <p class="hamburger">⋯</p>
+        <p class="hamburger">≡</p>
       </div>
     <!-- only opens with mobile-menu -->
 
       <div class='grid-center page-nav mobile-menu'>
-        <p class="cross">╳</p>
-        <a  href="/">home <br></a>
-        <a  href="/services">services <br></a>
-        <a  href="/clients">clients <br></a>
-        <a  href="/clients#reviews">reviews <br></a>
-        <a  href="/contact">contact</a><br>
-        <p class="right menu-p">we code websites for her.</p>
+        <p class="cross exit">╳</p>
+        <nav class=" padded-top-nav center">
+          <a class="exit" href="/#bio" class="padded-sides bio"> My bio </a>
+          <a class="exit"  href="/music" class="padded-sides music"> my music</a>
+          <a class="exit" href="/merch" class="padded-sides merch"> merch </a>
+          <a class="exit" href="/contact" class="padded-sides connect"> connect </a>
+        </nav>
+
+
+      <div class=" grid-center padded-iconify">
+        <a href="#"> <span class="iconify col-3 padded-top" data-icon="ph:spotify-logo-light" data-inline="false"></span> </a>
+        <a href="#"> <span class="iconify col-3" data-icon="ph:instagram-logo-light" data-inline="false"></span> </a>
+        <a href="#"> <span class="iconify col-3" data-icon="tabler:brand-tiktok" data-inline="false"></span> </a>
+        <a href="#"> <span class="iconify col-3"  data-icon="ph:youtube-logo-light" data-inline="false"></span> </a>
       </div>
-    </div>
-  <div class="col-3 padded-iconify">
-    <a href="#"> <span class="iconify padded-top" data-icon="ph:spotify-logo-light" data-inline="false"></span> </a>
-    <a href="#"> <span class="iconify" data-icon="ph:instagram-logo-light" data-inline="false"></span> </a>
-    <a href="#"> <span class="iconify" data-icon="tabler:brand-tiktok" data-inline="false"></span> </a>
-    <a href="#"> <span class="iconify" data-icon="ph:youtube-logo-light" data-inline="false"></span> </a>
   </div>
+</div>
+
   </header>
 
 <body>
@@ -369,11 +294,10 @@
     <div class="col-5_md-6_sm-12 padded-top padded-sides">
       <h1>Hooded sweatshirts </h1>
       <h6>Black, White, Heather Gray</h6>
-      <div class="has-image shopify-buy__layout-vertical shopify-buy__product"><div class="shopify-buy__btn-wrapper" data-element="product.buttonWrapper"><button class="shopify-buy__btn  " data-element="product.button">Add to cart</button></div></div>
+      <div id='product-component-1617448408948'></div>
     </div>
     </div>
   </section>
-  <div id='product-component-1617448408948'></div>
 
   <footer>
       <div class="col-12 centered sub-footer dark-bg">
@@ -382,5 +306,7 @@
       </p>
     </div>
   </footer>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+  <script src="/main.js" type="text/javascript"></script>
 
 </body>

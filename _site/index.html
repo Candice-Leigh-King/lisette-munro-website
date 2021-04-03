@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+<body>
 <head>
 
   <!-- Meta Data -->
@@ -49,57 +50,68 @@
     <link rel="stylesheet" href="/style.css"/>
   </head>
 
-  <header class="grid-center centered sticky">
+  <header class="grid-center_sm-hidden centered sticky">
     <div class="col-3">
       <a href="/">
         <h2 class="logo"> Lisette Munro </h2>
       </a>
     </div>
-    <nav class="col-6 padded-top-nav center">
+    <nav class="col-6_sm-hidden padded-top-nav center">
       <a href="/#bio" class="padded-sides bio"> My bio </a>
       <a href="/music" class="padded-sides music"> my music</a>
       <a href="/merch" class="padded-sides merch"> merch </a>
       <a href="/contact" class="padded-sides connect"> connect </a>
     </nav>
 
+    <div class="col-3_sm-hidden padded-iconify">
+      <a href="#"> <span class="iconify padded-top" data-icon="ph:spotify-logo-light" data-inline="false"></span> </a>
+      <a href="#"> <span class="iconify" data-icon="ph:instagram-logo-light" data-inline="false"></span> </a>
+      <a href="#"> <span class="iconify" data-icon="tabler:brand-tiktok" data-inline="false"></span> </a>
+      <a href="#"> <span class="iconify" data-icon="ph:youtube-logo-light" data-inline="false"></span> </a>
+    </div>
+  </header>
+  <header class="grid desktop-hide">
+
     <div class="col-2-middle padded grid centered fixed desktop-hide">
       <div>
-        <p class="hamburger">⋯</p>
+        <p class="hamburger">≡</p>
       </div>
     <!-- only opens with mobile-menu -->
 
       <div class='grid-center page-nav mobile-menu'>
-        <p class="cross">╳</p>
-        <a  href="/">home <br></a>
-        <a  href="/services">services <br></a>
-        <a  href="/clients">clients <br></a>
-        <a  href="/clients#reviews">reviews <br></a>
-        <a  href="/contact">contact</a><br>
-        <p class="right menu-p">we code websites for her.</p>
+        <p class="cross exit">╳</p>
+        <nav class=" padded-top-nav center">
+          <a class="exit" href="/#bio" class="padded-sides bio"> My bio </a>
+          <a class="exit" href="/music" class="padded-sides music"> my music</a>
+          <a  class="exit"href="/merch" class="padded-sides merch"> merch </a>
+          <a  class="exit"href="/contact" class="padded-sides connect"> connect </a>
+        </nav>
+
+
+      <div class="grid-center padded-iconify">
+        <a href="#"> <span class="iconify col-3 padded-top" data-icon="ph:spotify-logo-light" data-inline="false"></span> </a>
+        <a href="#"> <span class="iconify col-3" data-icon="ph:instagram-logo-light" data-inline="false"></span> </a>
+        <a href="#"> <span class="iconify col-3" data-icon="tabler:brand-tiktok" data-inline="false"></span> </a>
+        <a href="#"> <span class="iconify col-3"  data-icon="ph:youtube-logo-light" data-inline="false"></span> </a>
       </div>
-    </div>
-  <div class="col-3 padded-iconify">
-    <a href="#"> <span class="iconify padded-top" data-icon="ph:spotify-logo-light" data-inline="false"></span> </a>
-    <a href="#"> <span class="iconify" data-icon="ph:instagram-logo-light" data-inline="false"></span> </a>
-    <a href="#"> <span class="iconify" data-icon="tabler:brand-tiktok" data-inline="false"></span> </a>
-    <a href="#"> <span class="iconify" data-icon="ph:youtube-logo-light" data-inline="false"></span> </a>
   </div>
+</div>
+
   </header>
 
-  <section class="banner grid" style="background-image:url('/images/cover.jpg');"></section>
+  <section class="banner grid"></section>
 
-<section id="bio"class="grid-left paper-pg">
-  <div class="col-6 column padded">
-    <div class="col-12-center centered">
+<section id="bio"class="grid paper-pg">
+  <div class="col-6_sm-12 column padded">
+    <div class=" centered">
       <h2>My BIO</h2>
-
     </div>
     <p>Hi! My name is Lisette Munro. I am an 18 year old new pop singer and songwriter from Los Angeles, California. I am the first generation born in LA, my mom is from Honduras and my dad is from Haiti. I am trilingual, I speak English, French, and Spanish. I have always liked to sing ever since I could remember and have attended Colburn school of performing arts where I have undertaken vocal lessons and piano lessons for six years. I’ve always found it hard to talk about my emotions but throughout the years I have come to realize that singing is my way of being vulnerable and authentic, something that isn’t always easy to do on a daily basis. </p>
     <p>It’s crazy and surreal how life can take a turn and change from one minute to the next. Never in a million years did I imagine that I would be writing my own song. Let’s just say that the beginning of 2021 wasn’t what I expected it to be. I didn’t know how to cope with certain feelings that I had never felt before. One night I found myself alone, sitting on my bed, heartbroken, started writing my feelings out, and that’s how this whole journey began.</p>
     <p> If I had to tell you what inspired my song in one word, I’d say “heartbreak.” See sometimes, people walk into your life with a purpose, not to stay but to walk away. Sure it hurts for a while but once you realize that it wasn’t meant to be, that’s when you find inner peace again and become stronger because of it. After my heartbreak, I tried finding things to do to distract myself and coming to terms with reality. Then I realized that the only way of coping with this void in my heart  was to be completely vulnerable, honest, and transparent with myself. What better way of doing that than writing about it,right?! Here is my debut single “Through The Storm.”.</p>
   </div>
 
-<div class="col-6 column padded"> <img src="/images/port.png" alt="">
+<div class="col-6_sm-12 column padded"> <img src="/images/port.png" alt="">
 
 </section>
 
@@ -157,3 +169,7 @@
       </p>
     </div>
   </footer>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+  <script src="/main.js" type="text/javascript"></script>
+</body>
+</html>

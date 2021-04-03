@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+<body>
 <head>
 
   <!-- Meta Data -->
@@ -49,41 +50,53 @@
     <link rel="stylesheet" href="/style.css"/>
   </head>
 
-  <header class="grid-center centered sticky">
+  <header class="grid-center_sm-hidden centered sticky">
     <div class="col-3">
       <a href="/">
         <h2 class="logo"> Lisette Munro </h2>
       </a>
     </div>
-    <nav class="col-6 padded-top-nav center">
+    <nav class="col-6_sm-hidden padded-top-nav center">
       <a href="/#bio" class="padded-sides bio"> My bio </a>
       <a href="/music" class="padded-sides music"> my music</a>
       <a href="/merch" class="padded-sides merch"> merch </a>
       <a href="/contact" class="padded-sides connect"> connect </a>
     </nav>
 
+    <div class="col-3_sm-hidden padded-iconify">
+      <a href="#"> <span class="iconify padded-top" data-icon="ph:spotify-logo-light" data-inline="false"></span> </a>
+      <a href="#"> <span class="iconify" data-icon="ph:instagram-logo-light" data-inline="false"></span> </a>
+      <a href="#"> <span class="iconify" data-icon="tabler:brand-tiktok" data-inline="false"></span> </a>
+      <a href="#"> <span class="iconify" data-icon="ph:youtube-logo-light" data-inline="false"></span> </a>
+    </div>
+  </header>
+  <header class="grid desktop-hide">
+
     <div class="col-2-middle padded grid centered fixed desktop-hide">
       <div>
-        <p class="hamburger">⋯</p>
+        <p class="hamburger">≡</p>
       </div>
     <!-- only opens with mobile-menu -->
 
       <div class='grid-center page-nav mobile-menu'>
-        <p class="cross">╳</p>
-        <a  href="/">home <br></a>
-        <a  href="/services">services <br></a>
-        <a  href="/clients">clients <br></a>
-        <a  href="/clients#reviews">reviews <br></a>
-        <a  href="/contact">contact</a><br>
-        <p class="right menu-p">we code websites for her.</p>
+        <p class="cross exit">╳</p>
+        <nav class=" padded-top-nav center">
+          <a class="exit" href="/#bio" class="padded-sides bio"> My bio </a>
+          <a class="exit" href="/music" class="padded-sides music"> my music</a>
+          <a  class="exit"href="/merch" class="padded-sides merch"> merch </a>
+          <a  class="exit"href="/contact" class="padded-sides connect"> connect </a>
+        </nav>
+
+
+      <div class="grid-center padded-iconify">
+        <a href="#"> <span class="iconify col-3 padded-top" data-icon="ph:spotify-logo-light" data-inline="false"></span> </a>
+        <a href="#"> <span class="iconify col-3" data-icon="ph:instagram-logo-light" data-inline="false"></span> </a>
+        <a href="#"> <span class="iconify col-3" data-icon="tabler:brand-tiktok" data-inline="false"></span> </a>
+        <a href="#"> <span class="iconify col-3"  data-icon="ph:youtube-logo-light" data-inline="false"></span> </a>
       </div>
-    </div>
-  <div class="col-3 padded-iconify">
-    <a href="#"> <span class="iconify padded-top" data-icon="ph:spotify-logo-light" data-inline="false"></span> </a>
-    <a href="#"> <span class="iconify" data-icon="ph:instagram-logo-light" data-inline="false"></span> </a>
-    <a href="#"> <span class="iconify" data-icon="tabler:brand-tiktok" data-inline="false"></span> </a>
-    <a href="#"> <span class="iconify" data-icon="ph:youtube-logo-light" data-inline="false"></span> </a>
   </div>
+</div>
+
   </header>
 
   <section class="grid-center music-pg">
@@ -91,7 +104,7 @@
     <h5 class="col-12 centered"> New Single</h5>
     <h4 class="col-12 centered">Through the Storm</h4>
     <div class="grid-center flex-flip">
-      <div class="col-4_sm-12 cover"><img src="/images/cover-tape.png" alt="">
+      <div class="col-4_sm-6_xs-12 cover"><img src="/images/cover-tape.png" alt="">
       </div>
       <div class="col-12_sm-12 centered padded-mob-non">
         <a href="/music" class="button"> Buy now</a>
@@ -108,3 +121,7 @@
       </p>
     </div>
   </footer>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+  <script src="/main.js" type="text/javascript"></script>
+</body>
+</html>
