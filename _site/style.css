@@ -59,7 +59,15 @@ a {
   text-decoration: none;
   color: inherit;}
 
+a:hover {color: #ebc8d0;}
+
 p {color: rgb(120,120,125);}
+
+h1 {
+  font-family:  thesunset;
+  font-size: 3rem;
+  font-weight: lighter;
+}
 
 h2 {
   font-family: fontania;
@@ -97,25 +105,29 @@ header h2 {
     background-image: url('/images/a2.gif');
     background-size: contain;
     background-repeat: no-repeat;
-    background-position: center;}
+    background-position: center;
+    color: rgb(120,120,125);}
 
   header nav .music:hover {
     background-image: url('/images/a2.gif');
     background-size: contain;
     background-repeat: no-repeat;
-    background-position: center;}
+    background-position: center;
+    color: rgb(120,120,125);}
 
   header nav .merch:hover {
     background-image: url('/images/a2.gif');
     background-size: contain;
     background-repeat: no-repeat;
-    background-position: center;}
+    background-position: center;
+    color: rgb(120,120,125);}
 
   header nav .connect:hover {
     background-image: url('/images/a2.gif');
     background-size: contain;
     background-repeat: no-repeat;
-    background-position: center;}
+    background-position: center;
+    color: rgb(120,120,125);}
 
     /* Hamburger Menu */
     .hamburger,
@@ -173,6 +185,11 @@ header {
   height: 170px;
   }
 
+  footer {background-color: transparent;}
+  .sub-footer {background-color: transparent;}
+
+.small-font {font-size: 0.8rem;}
+
 .sticky {
   position: sticky;
   top:0;
@@ -219,6 +236,12 @@ header {
     background-position:bottom;
     margin-top: -10%;
   }
+
+  .banner-merch{
+    background-size: contain;
+    background-position: center;}
+
+
   .polaroids1
   {transform: rotate(-7deg);}
   .polaroids2
@@ -496,7 +519,9 @@ header {
 
   .input-text {
     font-size: 1rem;}
-
+    .blog-masonry {
+    columns: 2;
+    column-gap: 0;}
   }
 
   /* This media query kicks into action at the gridlex sm breakpoint */
@@ -505,10 +530,21 @@ header {
       background-image: url('/images/banner-mob.jpg');
       min-height: 50vh;
   }
+
+  .banner-merch {
+    background-image: url(/images/cover.jpg);
+    background-size: contain;
+    background-position: center;}
+
   .hamburger {
     display: block;
     font-size: 2rem;
   }
-h4 {font-size: 1.3rem;}
 
+h1 {font-size: 2rem;}
+
+h4 {font-size: 1.3rem;}
+.blog-masonry {
+columns: 1;
+column-gap: 0;}
 }
