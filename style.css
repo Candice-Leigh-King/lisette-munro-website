@@ -11,6 +11,7 @@ font-face {
   font-family: fontania;
   src: url(/fonts/fontania.otf);
 }
+
 * {
   padding: 0;
   margin: 0;
@@ -19,6 +20,7 @@ font-face {
 
 html {
   scroll-behavior: smooth; /* this enables smooth scrolling between internal links */
+  overflow-x: hidden;
 }
 
 img {
@@ -30,7 +32,7 @@ img {
 body {
   font-family: 'Noto Sans HK', sans-serif;
   color: rgb(120,120,125);
-  overflow-x: hidden;
+
 }
 
  /* this overrides the default padding and margin on gridlex elements */
@@ -507,7 +509,7 @@ header {
       top:0;
       right:0;
       z-index: 10;
-      font-size: 0.9rem;
+      font-size: 1rem;
       padding:0% 1%;
       border-radius: 0%;
       margin: 6%;
