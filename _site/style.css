@@ -73,8 +73,9 @@ h1 {
 }
 
 h2 {
-  font-family: fontania, 'Zeyada', cursive;;
-  font-size: 2rem;}
+  font-family: fontania, thesunset;
+  font-size: 2rem;
+  font-weight: lighter;}
 
 h4 {
   font-family: 'Montserrat', sans-serif;
