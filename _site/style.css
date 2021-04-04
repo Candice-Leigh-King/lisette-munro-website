@@ -26,7 +26,7 @@ html {
 img {
   width: 100%; /* this ensures images never break their container */
   height: auto;
-  overflow-x: hidden;
+  /* overflow-x: hidden; */
 }
 
 body {
@@ -95,9 +95,11 @@ h6 {
   font-size: 1.1rem;
   text-transform: lowercase;}
 
+.success a{color:#7cadc8; }  
+
 header h2 {
   text-transform: none;
-  padding-top: 2%;
+  padding-top: 5%;
   color: rgba(120,120,125,0.6); }
 
   header h2:hover {
@@ -163,16 +165,18 @@ header h2 {
       right:0;
       z-index: 100;
       font-size: 4rem;
-      padding:0% 1%;
-      border-radius: 0%;
+      padding:2%;
       margin: 3%;
       position: fixed;
+      color: rgba(120,120,125,0.6);
+      line-height: 0.3;
 
     }
 
-
 .paper-bg h2 {margin-top: -5%;}
 /* .paper-bg p {margin-top: 5%;}  */
+
+/* .bg-brown-paper {background-image: url(/images/bg-brown.png);} */
 
 header, padded-top {
   font-family: 'Zeyada', cursive;
@@ -181,19 +185,10 @@ header, padded-top {
 
 
 header {
-  background-image: url('images/paper-header.png');
+  background-image: url('images/torn-paper2.png');
   background-size: contain;
-  background-position: center top;
-  background-repeat: repeat-x;
-  height: 170px;
-  }
-
-  footer {background-color: #ebf8ff;}
-  .sub-footer {background-color: transparent;}
-
-.small-font {font-size: 0.8rem;}
-
-.sticky {
+  background-position: center;
+  background-repeat: no-repeat;
   position: sticky;
   top:0;
   left:0;
@@ -201,7 +196,14 @@ header {
   z-index: 2;
   margin:0;
   padding: 1%;
-  text-align: center;}
+  text-align: center;
+  }
+
+  footer {background-color: #ebf8ff;}
+  .sub-footer {background-color: transparent;}
+
+.small-font {font-size: 0.8rem;}
+
 
   .iconify {
     font-size: 2.5rem;
@@ -476,6 +478,8 @@ header {
         color: #b4b4be;
         padding-right: 1rem;}
 
+  .fixed {position: fixed;}
+
 
 
   @media(min-width:769px){
@@ -485,12 +489,16 @@ header {
   @media(max-width:768px) {
 
     header {
-      background-image: image();
+      background-image: none;
+      background-color: transparent;
       height: 0px;
       z-index: 100;
+      padding: 0%;
       }
 
     header h2 {font-size: 1rem;}
+
+    h4 {font-size: 1.3rem;}
 
 
     .mob-hide {
@@ -503,19 +511,8 @@ header {
       right: 15px;
     }
 
-    .fixed {position: fixed;}
+  .active {color: #b4d8eb;
 
-    .cross {
-      top:0;
-      right:0;
-      z-index: 10;
-      font-size: 1rem;
-      padding:0% 1%;
-      border-radius: 0%;
-      margin: 6%;
-      position: fixed;
-      font-weight: bold;
-      color: black;
     }
 
   .iconify {font-size: 2rem;}
@@ -536,12 +533,28 @@ header {
     column-gap: 0;}
   }
 
-  /* This media query kicks into action at the gridlex sm breakpoint */
+  /* This media query kicks into action at the gridlex xs breakpoint */
   @media(max-width:425px) {
     .banner {
       background-image: url('/images/banner-mob.jpg');
       min-height: 50vh;
   }
+
+
+  .polaroids1
+  {transform: rotate(-2deg);
+    z-index: -2;}
+
+  .polaroids2
+  {transform: rotate(2deg);
+    z-index: -2;}
+  .polaroids3{}
+  .polaroids4
+  {transform: rotate(2deg);
+    z-index: -2;}
+  .polaroids5
+  {transform: rotate(-2deg);
+    z-index: -2;}
 
   .banner-merch {
     background-image: url(/images/cover.jpg);
