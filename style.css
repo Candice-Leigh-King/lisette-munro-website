@@ -73,7 +73,7 @@ h1 {
 }
 
 h2 {
-  font-family: fontania;
+  font-family: fontania, thesunset;
   font-size: 2rem;}
 
 h4 {
@@ -95,7 +95,11 @@ h6 {
   font-size: 1.1rem;
   text-transform: lowercase;}
 
-.success a{color:#7cadc8; }  
+.success a {color:#7cadc8; text-decoration: none; display: inline-block;}
+.success {padding-top: 5%; }
+.success h4 {
+  font-family:  thesunset;
+  text-transform: none;}
 
 header h2 {
   text-transform: none;
