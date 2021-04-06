@@ -250,6 +250,8 @@ header {
     background-size: contain;
     background-position: center;}
 
+  .banner-merch-product {  background-size: cover;}
+
 
   .polaroids1
   {transform: rotate(-7deg);
@@ -308,7 +310,8 @@ header {
 
    .button:hover {
      background-color: #b4d8eb;
-    transition: all 1s;}
+    transition: all 1s;
+    color: black;}
 
     .card {
       padding: 2rem;
@@ -344,7 +347,7 @@ header {
     width: 50%;
     -ms-transform: translateY(-52%);
     transform: translateY(52%);
-  margin-left: 21%;}
+    }
 
     .card .author {
       font-weight: bold;
@@ -580,3 +583,5 @@ column-gap: 0;}
 .small-font {
     font-size: 0.6rem;
 }
+
+.tape img {  width: 100%;}
