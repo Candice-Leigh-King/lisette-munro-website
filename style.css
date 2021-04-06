@@ -347,7 +347,14 @@ header {
     width: 50%;
     -ms-transform: translateY(-52%);
     transform: translateY(52%);
+    margin-left: 25%;
     }
+
+    .tape-products img {
+      width: 50%;
+      -ms-transform: translateY(-52%);
+      transform: translateY(52%);
+      }
 
     .card .author {
       font-weight: bold;
