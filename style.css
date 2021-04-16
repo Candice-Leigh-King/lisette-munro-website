@@ -347,7 +347,7 @@ header {
     width: 50%;
     -ms-transform: translateY(-52%);
     transform: translateY(52%);
-    margin-left: 25%;
+    transform: translateX(25%);;
     }
 
     .tape-products img {
