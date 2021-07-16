@@ -230,7 +230,7 @@ header {
     min-height: 100vh;
     margin-top: -10%;}
 
-  .paper{
+  .paper {
     background-image: url('images/bg-paper.png');
     background-color: rgba(226,227,227,1);
     background-size: cover;
