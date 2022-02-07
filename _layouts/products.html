@@ -93,11 +93,11 @@
         "color": "white",
         ":hover": {
           "color": "white",
-          "background-color": "#b4d8eb"
+          "background-color": "#949c9f"
         },
-        "background-color": "#ebc8d0",
+        "background-color": "#2F383B",
         ":focus": {
-          "background-color": "#d4b4bb"
+          "background-color": "#2F383B"
         },
         "border-radius": "0px",
         "padding-left": "21px",
@@ -146,11 +146,11 @@
         "color": "white",
         ":hover": {
           "color": "white",
-          "background-color": "#b4d8eb"
+          "background-color": "#949c9f"
         },
-        "background-color": "#ebc8d0",
+        "background-color": "#2F383B",
         ":focus": {
-          "background-color": "#ebc8d0"
+          "background-color": "#2F383B"
         },
         "border-radius": "0px",
         "padding-left": "21px",
@@ -172,11 +172,11 @@
         "color": "white",
         ":hover": {
           "color": "white",
-          "background-color": "#b4d8eb"
+          "background-color": "#949c9f"
         },
-        "background-color": "#ebc8d0",
+        "background-color": "#2F383B",
         ":focus": {
-          "background-color": "#b4d8eb"
+          "background-color": "#949c9f"
         },
         "border-radius": "0px"
       }
@@ -193,12 +193,12 @@
     "styles": {
       "toggle": {
         "font-family": "Playfair Display, serif",
-        "background-color": "#ebc8d0",
+        "background-color": "#2F383B",
         ":hover": {
-          "background-color": "#b4d8eb"
+          "background-color": "#949c9f"
         },
         ":focus": {
-          "background-color": "#b4d8eb"
+          "background-color": "#949c9f"
         }
       },
       "count": {
@@ -238,7 +238,7 @@
   <header class="grid-center_sm-hidden centered sticky">
     <div class="col-3">
       <a href="/">
-        <h2 class="logo editable"> Lisette Munro </h2>
+        <h2 class=" editable"> <img class="logo"src="/images/logo.png" alt="lisette munro logo"> </h2>
       </a>
     </div>
     <nav class="col-6_sm-hidden padded-top-nav center">
@@ -257,9 +257,9 @@
   </header>
   <header class="grid desktop-hide">
       <div class="col-5-right padded centered fixed desktop-hide">
-    <a href="/">
-      <h2 class="logo editable"> Lisette Munro </h2>
-    </a>
+        <a href="/">
+          <h2 class=" editable"> <img class="logo"src="/images/logo.png" alt="lisette munro logo"> </h2>
+        </a>
     <div class="col-2-middle padded grid centered fixed desktop-hide">
       <div class="hamburger">
         <span>_</span><br><span>_</span><span><br>_</span>
@@ -269,7 +269,7 @@
       <div class='grid-center page-nav mobile-menu'>
         <nav class=" padded-top-nav center">
           <a href="/">
-            <h2 class="logo editable"> Lisette Munro </h2>
+            <h2 class=" editable"> <img class="logo"src="/images/logo.png" alt="lisette munro logo"> </h2>
           </a>
           <a class="exit editable" href="/#bio" class="padded-sides bio editable"> My bio </a>
           <a class="exit" href="/music" class="padded-sides music editable"> my music</a>
@@ -290,7 +290,7 @@
   </header>
 
 <body>
-  <section class="grid-center shop-details light-bg banner-merch-product" style="background-image:url(/images/bg-paper2.png">
+  <section class="grid-center shop-details light-bg banner-merch-product" style="background-color:{{page.background_color}};">
     <div class="padding-top padding-sides col-12 centered">
       <button class="back-button padded-top"> <a href = "javascript:history.back()">&lt;  Go Back</a></button>
     </div>
@@ -301,13 +301,9 @@
         <p class="padded col-8_sm-12 ">{{page.product-description}}</p>
       </div>
       <div class="col-6_md-6_sm-12 grid-center padded-sides">
-        <span class="tape-products"><img src="/images/tape.png" alt=""></span>
         <div class="col-12" id='product-component-{{page.product-number}}'></div>
       </div>
     </div>
-  </section>
-  <section class="grid-center">
-
   </section>
 
   <footer>
