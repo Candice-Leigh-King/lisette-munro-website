@@ -42,7 +42,7 @@ body {
 .right    {  text-align: right;    }
 .centered {  text-align: center;   }
 
-.padded   {  padding: 5%  !important;  }
+.padded   {  padding: 5%;    }
 .padded-1 {  padding: 1rem;  }
 .padded-2 {  padding: 2rem;  }
 .padded-sides {padding: 0% 2%;}
@@ -52,6 +52,7 @@ body {
 .padded-top {padding-top: 5%;}
 .padded-mob-non {padding-left: 3%;}
 .capped-width { width: 80%; margin: auto;}
+.padded-cd {padding: 0% 5% 5% 5% !important;}
 
 
 a {
