@@ -42,7 +42,7 @@ body {
 .right    {  text-align: right;    }
 .centered {  text-align: center;   }
 
-.padded   {  padding: 5%;    }
+.padded   {  padding: 5%  !important;  }
 .padded-1 {  padding: 1rem;  }
 .padded-2 {  padding: 2rem;  }
 .padded-sides {padding: 0% 2%;}
